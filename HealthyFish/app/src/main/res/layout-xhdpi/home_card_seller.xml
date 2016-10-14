@@ -1,0 +1,76 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    card_view:cardCornerRadius="1dp"
+    card_view:cardUseCompatPadding="true"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:padding="5dp"
+        >
+
+        <TextView
+            android:id="@+id/home_best_seller_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:textColor="#006599"
+            android:gravity="center_horizontal"
+            android:text="Consectetuer"
+            android:textAlignment="center"
+
+            android:textSize="15dp"/>
+        <TextView
+            android:id="@+id/home_best_seller_malayalam_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/home_best_seller_title"
+            android:textColor="#006599"
+            android:gravity="center_horizontal"
+            android:text="Consectetuer"
+            android:textAlignment="center"
+            android:textSize="12dp"/>
+
+
+        <ImageView
+            android:id="@+id/home_best_seller_img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/home_best_seller_malayalam_title"
+            android:src="@drawable/design_home_category_one"
+            />
+
+        <TextView
+
+            android:id="@+id/home_best_seller_offer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="save 20%"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:textColor="#F2250E"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:visibility="gone"/>
+        <TextView
+
+            android:id="@+id/home_best_seller_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="360.00"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+
+
+</android.support.v7.widget.CardView>

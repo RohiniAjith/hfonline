@@ -1,0 +1,149 @@
+
+
+<ScrollView
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content" >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Billing Address"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:padding="3dp"
+        android:layout_marginTop="20dp"
+        android:textColor="#000000"
+
+        />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:hint="Name"
+        android:id="@+id/name"
+        android:layout_marginTop="10dp"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:hint="Email Address"
+        android:id="@+id/email"
+        android:layout_marginTop="10dp"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:hint="Address"
+        android:id="@+id/address"
+        android:layout_marginTop="10dp"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:hint="Address2"
+        android:id="@+id/address2"
+        android:layout_marginTop="10dp"
+        android:inputType="textPersonName" />
+
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:hint="City"
+        android:id="@+id/city"
+        android:layout_marginTop="10dp"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:hint="State"
+        android:id="@+id/city"
+        android:layout_marginTop="10dp"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:hint="Location"
+        android:id="@+id/location"
+        android:layout_marginTop="10dp"
+        android:inputType="textPersonName" />
+
+
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:hint="Postal Code"
+        android:id="@+id/postal"
+        android:layout_marginTop="10dp"
+        android:inputType="textPersonName" />
+
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:hint="Mobile"
+        android:id="@+id/mobile"
+        android:layout_marginTop="10dp"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:hint="Alt Mobile"
+        android:id="@+id/altmobile"
+        android:layout_marginTop="10dp"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:hint="Landmark"
+        android:id="@+id/landmark"
+        android:layout_marginTop="10dp"
+        android:inputType="textPersonName" />
+
+
+
+
+
+
+    <Button
+        android:id="@+id/btn_request_billing"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Continue"
+        android:textColor="@android:color/white"
+        android:textSize="13dp" />
+
+
+</LinearLayout>
+
+</ScrollView>

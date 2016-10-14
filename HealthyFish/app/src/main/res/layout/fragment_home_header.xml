@@ -1,0 +1,47 @@
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/home_header_recycler_view_swipeRefreshLayout"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/header_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@color/header"
+        android:minHeight="?attr/actionBarSize"
+        android:titleTextColor="@color/windowBackground"
+        android:layout_alignParentTop="true"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical"
+        android:layout_below="@+id/header_toolbar">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/home_header_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:scrollbars="vertical" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:id="@+id/iv_nonet"
+            android:visibility="gone"
+            android:singleLine="false"
+            android:text="NO INTERNET CONNECTION"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
+</android.support.v4.widget.SwipeRefreshLayout>

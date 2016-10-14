@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    >
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/appbar"
+                android:layout_width="match_parent"
+                android:layout_height="250dp">
+
+                <android.support.design.widget.CollapsingToolbarLayout
+                    android:id="@+id/collapsing_toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fitsSystemWindows="true"
+                    app:contentScrim="?attr/colorPrimary"
+                    app:expandedTitleMarginEnd="64dp"
+                    app:expandedTitleMarginStart="48dp"
+                    app:expandedTitleTextAppearance="@android:color/transparent"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/rel_menu_home"
+                        android:layout_marginTop="10dp">
+                        <RelativeLayout
+                            android:id="@+id/rel_menu_title_home"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/home_title_tab">
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="25dp"
+                                android:layout_marginBottom="2dp"
+                                android:id="@+id/relative_se"
+                                android:clickable="true"
+
+                                >
+                                <ImageButton
+                                    android:id="@+id/category_search"
+                                    android:layout_width="65dp"
+                                    android:layout_height="65dp"
+                                    android:focusable="false"
+                                    android:clickable="false"
+                                    android:background="@drawable/home_crab" />
+                                <TextView
+                                    android:layout_width="65dp"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="12sp"
+                                    android:focusable="false"
+                                    android:clickable="false"
+                                    android:gravity="center_horizontal"
+                                    android:layout_below="@+id/category_search"
+                                    android:textColor="@color/navigationBarColor"
+                                    android:text="@string/crab" />
+                            </RelativeLayout>
+                            <RelativeLayout
+                                android:id="@+id/relative_se1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginBottom="2dp"
+                                android:clickable="true"
+                                android:layout_toRightOf="@+id/relative_se"
+
+                                >
+                                <ImageButton
+                                    android:id="@+id/btn_shrimps"
+                                    android:layout_width="65dp"
+                                    android:layout_height="65dp"
+                                    android:focusable="false"
+                                    android:clickable="false"
+                                    android:background="@drawable/home_shrimps"
+                                    />
+                                <TextView
+                                    android:layout_width="65dp"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="12sp"
+                                    android:focusable="false"
+                                    android:clickable="false"
+                                    android:gravity="center_horizontal"
+                                    android:layout_below="@+id/btn_shrimps"
+                                    android:textColor="@color/navigationBarColor"
+                                    android:text="@string/shrimps"
+                                    />
+                            </RelativeLayout>
+                            <RelativeLayout
+                                android:id="@+id/relative_se2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginBottom="2dp"
+                                android:clickable="true"
+                                android:layout_toRightOf="@+id/relative_se1"
+
+                                >
+                                <!--android:background="@drawable/home_ripple_effect"-->
+                                <ImageButton
+                                    android:id="@+id/btn_fishes"
+                                    android:layout_width="65dp"
+                                    android:layout_height="65dp"
+                                    android:focusable="false"
+                                    android:clickable="false"
+                                    android:background="@drawable/home_fish"
+                                    />
+                                <TextView
+                                    android:layout_width="65dp"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="12sp"
+                                    android:focusable="false"
+                                    android:clickable="false"
+                                    android:gravity="center_horizontal"
+                                    android:layout_below="@+id/btn_fishes"
+                                    android:textColor="@color/navigationBarColor"
+                                    android:text="@string/fish"
+                                    />
+                            </RelativeLayout>
+                            <RelativeLayout
+                                android:id="@+id/relative_se3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginBottom="2dp"
+                                android:clickable="true"
+                                android:layout_toRightOf="@+id/relative_se2"
+
+                                >
+                                <ImageButton
+                                    android:id="@+id/btn_offers"
+                                    android:layout_width="65dp"
+                                    android:layout_height="65dp"
+                                    android:focusable="false"
+                                    android:clickable="false"
+                                    android:background="@drawable/home_offer"
+                                    />
+                                <TextView
+                                    android:layout_width="65dp"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="12sp"
+                                    android:focusable="false"
+                                    android:clickable="false"
+                                    android:gravity="center_horizontal"
+                                    android:layout_below="@+id/btn_offers"
+                                    android:textColor="@color/navigationBarColor"
+                                    android:text="@string/offer"
+                                    />
+                            </RelativeLayout>
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/rel_menu_title_home"
+                            android:id="@+id/rel_slider_iv"
+                            android:padding="10dp">
+                            <com.billionbeatsinfotech.mylibrary.SliderLayout
+                                android:id="@+id/slider"
+                                android:layout_width="match_parent"
+                                custom:pager_animation="Accordion"
+                                custom:auto_cycle="true"
+                                custom:indicator_visibility="visible"
+                                custom:pager_animation_span="1100"
+                                android:layout_height="200dp"/>
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <!--<android.support.v7.widget.Toolbar-->
+                    <!--android:id="@+id/toolbar"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="?attr/actionBarSize"-->
+                    <!--app:layout_collapseMode="pin"-->
+                    <!--app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />-->
+
+                </android.support.design.widget.CollapsingToolbarLayout>
+
+            </android.support.design.widget.AppBarLayout>
+
+            <include layout="@layout/home_recyclerview" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="3px" >
+
+
+    <TextView
+        android:id="@+id/text_price_cat_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5px"
+        android:layout_marginTop="2px"
+        android:padding="3px"
+        android:text="JMD Group"
+        android:textColor="#0022ee"
+        android:textSize="15px"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_price_cat_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_toRightOf="@+id/text_price_cat_name"
+        android:padding="2px"
+        android:visibility="gone"
+
+
+        />
+
+</RelativeLayout>

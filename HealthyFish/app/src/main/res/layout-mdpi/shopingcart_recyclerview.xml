@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_shoping"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@color/header"
+        android:minHeight="?attr/actionBarSize"
+        android:titleTextColor="@color/windowBackground"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar_shoping"
+        android:id="@+id/scr_rel_disp">
+
+    <RelativeLayout
+        android:id="@+id/scr_rel_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentLeft="true"
+        android:padding="15dp"
+        android:background="@drawable/border"
+        >
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Product Items"
+    android:textSize="17sp"
+    android:textColor="#000000"
+    android:textStyle="bold"
+    />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/scr_lnr_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scr_rel_title"
+        android:orientation="vertical">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/scr_recylerview"
+            android:layout_width="match_parent"
+            android:layout_height="290dp"
+            android:layout_margin="5dp"
+            android:scrollbars="vertical" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/scr_rel_conform_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/header"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+
+        android:clickable="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:textColor="@color/cardview_light_background"
+            android:text="Conform Order"/>
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/scr_rel_conform_order"
+
+            android:background="@drawable/border"
+            android:padding="15dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sub Total"
+                android:textSize="17sp"
+                android:layout_alignParentLeft="true"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/scr_tv_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="17sp"
+                android:layout_alignParentRight="true"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:visibility="gone"
+        android:id="@+id/scr_rel_nodata">
+        <TextView
+            android:id="@+id/scr_tv_no"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text=""/>
+</RelativeLayout>
+
+</RelativeLayout>

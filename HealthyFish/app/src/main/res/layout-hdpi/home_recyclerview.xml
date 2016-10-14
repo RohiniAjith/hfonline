@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/viewBg"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activity.DashBoardActivity"
+
+    tools:showIn="@layout/homefragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/hc_rel_exp">
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rel_exp_title_recycler"
+        android:padding="10dp"
+        android:paddingTop="5dp"
+        android:background="@color/home_title_tab"
+        android:layout_alignParentTop="true"
+        android:paddingBottom="5dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Healthy Fish Express"
+            android:gravity="center_horizontal"
+            android:textColor="@color/home_tittle"
+            android:textSize="20sp"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rel_exp_title_recycler"
+        android:id="@+id/rel_exp_recyl_home_tv"
+        android:background="@drawable/rectable">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/home_express_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+
+            android:layout_weight="1"
+            android:scrollbars="vertical" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/home_exp_recycler_view_more"
+            android:clickable="true"
+            android:background="@drawable/img_border"
+            android:layout_below="@+id/home_express_recycler_view">
+            <TextView
+                android:id="@+id/home_exp_tv_new_arrival_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View More "
+                android:clickable="false"
+                android:focusable="false"
+                android:textSize="15sp"
+                android:textColor="@color/blue"
+                android:gravity="center_horizontal"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                />
+
+            <TextView
+                android:id="@+id/home_exp_tv_new_arrival_more_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" &#xf0a9;"
+                android:clickable="false"
+                android:focusable="false"
+                android:textColor="@color/red"
+                android:gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:padding="4dp"
+                android:layout_toRightOf="@+id/home_exp_tv_new_arrival_more"
+                />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/hc_rel_new_arrival"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hc_rel_exp">
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rel_title_recycler"
+        android:padding="10dp"
+        android:paddingTop="5dp"
+        android:background="@color/home_title_tab"
+        android:layout_alignParentTop="true"
+        android:paddingBottom="5dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="New Arrival"
+            android:gravity="center_horizontal"
+            android:textColor="@color/home_tittle"
+            android:textSize="20sp"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rel_title_recycler"
+        android:id="@+id/rel_recyl_home_tv"
+        android:background="@drawable/rectable">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/home_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+
+        android:layout_weight="1"
+        android:scrollbars="vertical" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/home_recycler_view_more"
+        android:clickable="true"
+        android:background="@drawable/img_border"
+        android:layout_below="@+id/home_recycler_view">
+        <TextView
+            android:id="@+id/home_tv_new_arrival_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View More "
+            android:clickable="false"
+            android:focusable="false"
+            android:textSize="15sp"
+            android:textColor="@color/blue"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:id="@+id/home_tv_new_arrival_more_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" &#xf0a9;"
+            android:clickable="false"
+            android:focusable="false"
+            android:textColor="@color/red"
+            android:gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            android:padding="4dp"
+            android:layout_toRightOf="@+id/home_tv_new_arrival_more"
+            />
+
+
+    </RelativeLayout>
+    </RelativeLayout>
+    </RelativeLayout>
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/rel_home_recyclerview_best_seller"
+    android:layout_below="@+id/hc_rel_new_arrival">
+    <include layout="@layout/home_recyclerview_best_seller" />
+</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/rel_home_recyclerview_best_seller">
+        <include layout="@layout/home_recyclerview_images" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:id="@+id/iv_nonet"
+        android:visibility="gone"
+
+        android:text="NO INTERNET CONNECTION"/>
+</RelativeLayout>

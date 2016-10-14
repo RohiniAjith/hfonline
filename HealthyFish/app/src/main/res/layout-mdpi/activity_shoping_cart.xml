@@ -1,0 +1,126 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    card_view:cardCornerRadius="2dp"
+    card_view:cardUseCompatPadding="true"
+    >
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cardview_background"
+            >
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/left_layout"
+                android:layout_width="120dp"
+                android:layout_height="170dp"
+                android:layout_alignParentLeft="true"
+                >
+                <ImageView
+                    android:id="@+id/asc_iv"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/nopoto"
+                    android:layout_centerInParent="true"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/asc__rel_content"
+                android:layout_width="400dp"
+                android:layout_height="170dp"
+                android:layout_toRightOf="@+id/left_layout"
+                android:layout_marginLeft="5dp"
+                >
+
+                <TextView
+                    android:id="@+id/asc_category_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sailfish"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    />
+
+                <TextView
+                    android:id="@+id/asc_category_title_malayalam"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ഓലപുടവൻ"
+                    android:layout_below="@+id/asc_category_title"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="16sp"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/asc_category_iten_offer_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Price"
+                    android:layout_below="@+id/asc_category_title_malayalam"
+                    android:textSize="15sp"
+                    android:textColor="@color/cardview_dark_background"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    />
+
+
+                <TextView
+                    android:id="@+id/asc_category_iten_original_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="131.34"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/asc_category_iten_offer_price"
+                    android:layout_below="@+id/asc_category_title_malayalam"
+                    android:textSize="15sp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/cardview_dark_background"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/asc_quantity_tv"
+                    android:text="Quanitity"
+                    android:padding="1dp"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/asc_category_iten_original_price"/>
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/asc_rel_hhrvi_tv_no_value"
+                    android:text="1"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/asc_quantity_tv"
+                    android:layout_below="@+id/asc_category_iten_original_price"
+                    >
+
+                </TextView>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+</android.support.v7.widget.CardView>
+

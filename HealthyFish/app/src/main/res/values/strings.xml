@@ -1,0 +1,126 @@
+<resources>
+    <string name="app_name">HealthyFish</string>
+    <string name="splash_tv_name">A Sympan Group Venture</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_back">Back</string>
+    <string name="action_search">Search Here</string>
+    <string name="action_category_search">Shop by Category</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="action_cart_no">0</string>
+    <string name="nav_item_home">Home</string>
+    <string name="nav_item_recently_viewed">Your Recently Viewed Items</string>
+    <string name="nav_item_shop_by_category">Shop By Category</string>
+    <string name="nav_item_today_deal">Todays Deals</string>
+    <string name="nav_item_gift_cards">Gift Cards</string>
+    <string name="nav_item_account">YOUR ACCOUNT</string>
+    <string name="nav_item_wish_list">Your Wish List</string>
+    <string name="nav_item_orders">Your Orders</string>
+    <string name="nav_item_account_sub">Your Account</string>
+    <string name="nav_item_more">MORE</string>
+    <string name="nav_item_notification">Notifications</string>
+    <string name="nav_item_service">Customer Service</string>
+    <string name="nav_item_about">Legal and About</string>
+    <string name="nav_item_sign_in">Hello.Sign In</string>
+
+    <string name="nav_contact_us">Contact us</string>
+    <string name="nav_about_us">About us</string>
+    <string name="nav_rate_us">Rate us</string>
+    <string name="nav_share_app">Share App</string>
+    <string name="nav_faq">FAQ</string>
+    <string name="nav_cancel">Cancellation</string>
+    <string name="nav_returns">Returns  Refunds</string>
+    <string name="nav_terms">Terms  Conditions</string>
+    <string name="nav_privacy">Privacy  Policy</string>
+    <string name="nav_logout">Logout</string>
+    <!-- Registration-->
+    <string name="registration">Registration</string>
+    <string name="firstname">First Name</string>
+    <string name="lastname">Last Name</string>
+    <string name="emailid">Email Id</string>
+    <string name="phonenumber">Mobile Number</string>
+    <string name="registrationtxt">Register Now</string>
+    <string name="otp">OTP</string>
+    <string name="submit">Submit</string>
+    <string name="lbl_next">Register Here</string>
+    <string name="msg_sit_back">Please wait your mobile number is verifying</string>
+    <string name="msg_manual_otp">(Enter the OTP below in case if we fail to detect the SMS automatically)</string>
+    <string name="lbl_enter_otp">Enter OTP</string>
+    <string name="facebook_reg">Register with Facebook</string>
+    <string name="twitter_reg">Register with Twitter</string>
+    <string name="google_reg">Register with Google+</string>
+
+    <!-- navigation drawer item labels  -->
+    <string-array name="nav_drawer_labels">
+        <item>@string/nav_item_home</item>
+        <!--<item>@string/nav_item_recently_viewed</item>-->
+        <!--<item>@string/nav_item_shop_by_category</item>-->
+     <!--   <item>@string/nav_item_wish_list</item>-->
+        <item>@string/nav_item_orders</item>
+        <item>@string/nav_item_account_sub</item>
+        <item>@string/nav_contact_us</item>
+        <item>@string/nav_about_us</item>
+        <item>@string/nav_rate_us</item>
+        <item>@string/nav_share_app</item>
+        <item>@string/nav_faq</item>
+        <item>@string/nav_cancel</item>
+        <item>@string/nav_returns</item>
+        <item>@string/nav_terms</item>
+        <item>@string/nav_privacy</item>
+        <item>@string/nav_logout</item>
+    </string-array>
+
+    <string name="icon_home">&#xf015;</string>
+    <string name="icon_recently_viewed">&#xf02e;</string>
+    <string name="icon_shop_by_category">&#xf111;</string>
+    <string name="icon_your_wish_list">&#xf022;</string>
+    <string name="icon_your_order">&#xf2b0;</string>
+    <string name="icon_account">&#xf1ac;</string>
+    <string name="icon_contact_us">&#xf02d;</string>
+    <string name="icon_about_us">&#xf0fd;</string>
+    <string name="icon_rate_us">&#xf005;</string>
+    <string name="icon_share_app">&#xf1e1;</string>
+    <string name="icon_faq">&#xf29c;</string>
+    <string name="icon_cancellation">&#xf05e;</string>
+    <string name="icon_return_refund">&#xf0d6;</string>
+    <string name="icon_terms_conditions">&#xf0c9;</string>
+    <string name="icon_privacy_policy">&#xf044;</string>
+    <string name="icon_logout">&#xf08b;</string>
+    <string name="arrow_circle_right">&#xf0a9;</string>
+    <string-array name="nav_drawer_icons">
+        <item>@string/icon_home</item>
+        <!--<item>@string/icon_recently_viewed</item>-->
+        <!--<item>@string/icon_shop_by_category</item>-->
+        <!--<item>@string/icon_your_wish_list</item>-->
+        <item>@string/icon_your_order</item>
+        <item>@string/icon_account</item>
+        <item>@string/icon_contact_us</item>
+        <item>@string/icon_about_us</item>
+        <item>@string/icon_rate_us</item>
+        <item>@string/icon_share_app</item>
+        <item>@string/icon_faq</item>
+        <item>@string/icon_cancellation</item>
+        <item>@string/icon_return_refund</item>
+        <item>@string/icon_terms_conditions</item>
+        <item>@string/icon_privacy_policy</item>
+        <item>@string/icon_logout</item>
+
+    </string-array>
+    <!--titles in homepage-->
+    <string name="crab">CRAB</string>
+    <string name="shrimps">SHRIMPS</string>
+    <string name="fish">FISH</string>
+    <string name="offer">OFFER</string>
+    <string-array name="count_array">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string name="select">Select</string>
+    <string-array name="type_array">
+        <item>Skinless Pieces 500 gram</item>
+        <item>Skinless Pieces 300 gram</item>
+        <item>Skinless Pieces 200 gram</item>
+    </string-array>
+</resources>

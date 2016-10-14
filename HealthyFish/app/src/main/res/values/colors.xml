@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0BB7B7</color>
+    <color name="addtocart">#0BB7B7</color>
+    <color name="colorPrimaryDark">#078e8e</color>
+    <color name="colorAccent">#00AEAF</color>
+    <color name="buttonbg">#2877A0</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#000000</color>
+    <color name="gray">#cccccc</color>
+    <color name="light">#1D6A93</color>
+    <color name="red">#F7111B</color>
+    <color name="header">#49B2D0</color>
+    <color name="viewBg">#f1f5f8</color>
+    <color name="holo_blue_dark">#ff0099cc</color>
+    <color name="view_divider_color">#BABABA</color>
+    <color name="view_divider_color_2">#DADADA</color>
+    <color name="home_title_tab">#FFFF</color>
+    <color name="nav_font_icon">#ff0099cc</color>
+    <color name="login_btn_facebook">#3B5998</color>
+    <color name="login_btn_twitter">#1DA0F2</color>
+    <color name="home_tittle">#4f4f4f</color>
+    <color name="home_border">#E8E7DC</color>
+    <color name="blue">#006599</color>
+    <color name="header_list_add_cart">#FFFFFF</color>
+    <color name="header_list_spinner">#4f4f4f</color>
+    <color name="tv_splash">#2677A2</color>
+    <color name="spinner_bg">#A1E7EE</color>
+</resources>
+

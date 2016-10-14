@@ -1,0 +1,325 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/agft_viewContainer"
+    android:layout_width="match_parent"
+    android:layout_height="1200dp"
+    tools:context="com.healthyfish.healthyfish.activity.SmsRegistrationActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_registration"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@color/header"
+        android:minHeight="?attr/actionBarSize"
+        android:titleTextColor="@color/windowBackground"
+        />
+    <com.healthyfish.healthyfish.pager.OtpViewPager
+        android:id="@+id/agft_viewPagerVertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_registration">
+
+
+
+        <LinearLayout
+            android:id="@+id/agft_layout_sms"
+            android:layout_width="match_parent"
+            android:layout_height="1200dp"
+
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo"
+                android:layout_marginTop="20dp"
+                />
+            <!--<ImageView-->
+            <!--android:layout_width="60dp"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:layout_marginBottom="25dp"-->
+            <!--android:layout_marginTop="100dp"-->
+            <!--android:src="@mipmap/ic_launcher" />-->
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:gravity="center_horizontal"
+                android:inputType="textCapWords"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:text="Healthy Fish"
+                android:textColor="@android:color/white"
+                android:textSize="14dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+               >
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/til_agft_inputName"
+                    android:layout_width="400dp"
+                    android:layout_height="wrap_content"
+
+                    android:paddingLeft="13dp"
+                    >
+                    <EditText
+                        android:id="@+id/agft_inputName"
+                        android:layout_width="320dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:fontFamily="sans-serif-light"
+                        android:hint="Name"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp"
+
+                        />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/til_agft_inputEmail"
+                    android:layout_width="400dp"
+                    android:paddingLeft="13dp"
+                    android:layout_height="wrap_content"
+                    >
+                    <EditText
+                        android:id="@+id/agft_inputEmail"
+                        android:layout_width="320dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+
+                        android:fontFamily="sans-serif-light"
+                        android:hint="Email Id"
+                        android:singleLine="true"
+                        android:inputType="textEmailAddress"
+                        android:padding="5dp"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp"
+
+                        />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/til_agft_inputMobile"
+                    android:layout_width="400dp"
+                    android:paddingLeft="13dp"
+                    android:layout_height="wrap_content"
+
+                    >
+                    <EditText
+                        android:id="@+id/agft_inputMobile"
+                        android:layout_width="320dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:hint="Mobile Number"
+                        android:inputType="phone"
+                        android:maxLength="10"
+                        android:padding="5dp"
+                        android:singleLine="true"
+
+                        android:textCursorDrawable="@null"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp"
+
+
+                        />
+                </android.support.design.widget.TextInputLayout>
+
+                    <!--<android.support.design.widget.TextInputLayout
+                        android:id="@+id/til_agft_inputLocation"
+                        android:layout_width="400dp"
+                        android:paddingLeft="13dp"
+                        android:layout_height="wrap_content"
+
+                        >
+                        <EditText
+                            android:id="@+id/agft_inputLocation"
+                            android:layout_width="320dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="sans-serif-light"
+                            android:hint="Type your location.."
+                            android:inputType="textAutoComplete"
+                            android:maxLength="10"
+                            android:padding="5dp"
+                            android:textCursorDrawable="@null"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="16sp" />
+                    </android.support.design.widget.TextInputLayout>-->
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/til_agft_inputPassword"
+                    android:layout_width="400dp"
+                    android:paddingLeft="13dp"
+                    android:layout_height="wrap_content"
+
+                    >
+                    <EditText
+                        android:id="@+id/agft_inputPassword"
+                        android:layout_width="320dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:hint="Password"
+                        android:inputType="text"
+                        android:maxLength="10"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:textCursorDrawable="@null"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp"
+                        />
+                </android.support.design.widget.TextInputLayout>
+
+               <!-- <android.support.design.widget.TextInputLayout
+                    android:id="@+id/til_agft_inputConfirmPassword"
+                    android:layout_width="400dp"
+                    android:paddingLeft="13dp"
+                    android:layout_height="wrap_content"
+
+                    >
+                    <EditText
+                        android:id="@+id/agft_inputConfirmPassword"
+                        android:layout_width="320dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:hint="Confirm your password.."
+                        android:inputType="text"
+                        android:maxLength="10"
+                        android:padding="5dp"
+                        android:textCursorDrawable="@null"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp"
+
+                        />
+                </android.support.design.widget.TextInputLayout>-->
+
+
+                <Button
+                    android:id="@+id/agft_btn_request_sms"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/lbl_next"
+                    android:background="@color/buttonbg"
+                    android:textColor="@android:color/white"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="25dp"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/agft_layout_otp"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="25dp"
+                android:layout_marginTop="100dp"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:gravity="center_horizontal"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:text="@string/msg_sit_back"
+                android:textColor="@android:color/white"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:gravity="center_horizontal"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:text="@string/msg_manual_otp"
+                android:textColor="@android:color/white"
+                android:textSize="12dp" />
+
+            <EditText
+                android:id="@+id/agft_inputOtp"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center_horizontal"
+                android:hint="@string/lbl_enter_otp"
+                android:inputType="number"
+                android:padding="10dp"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/agft_btn_verify_otp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:background="@color/colorPrimaryDark"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="lbl_submit"
+                android:textColor="@android:color/white"
+                android:textSize="14dp"
+                />
+
+        </LinearLayout>
+
+    </com.healthyfish.healthyfish.pager.OtpViewPager>
+
+
+    <ProgressBar
+        android:id="@+id/agft_progressBar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="60dp"
+        android:indeterminateTint="@color/colorAccent"
+        android:indeterminateTintMode="src_atop"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/agft_layout_edit_mobile"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/agft_txt_edit_mobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="16dp" />
+
+        <ImageButton
+            android:id="@+id/agft_btn_edit_mobile"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:src="@drawable/ic_home" />
+    </LinearLayout>
+
+</RelativeLayout>

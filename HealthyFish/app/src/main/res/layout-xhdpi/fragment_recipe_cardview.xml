@@ -1,0 +1,104 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:orientation="horizontal"
+    card_view:cardCornerRadius="2dp"
+    card_view:cardUseCompatPadding="true"
+
+
+    >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/frc_relative_title">
+
+
+            <TextView
+                android:id="@+id/frc_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="Consectetuer"
+                android:textStyle="bold"
+                android:textSize="15sp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/frc_relative_image"
+            android:layout_below="@+id/frc_relative_title"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:id="@+id/frc_thumb_img"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="5dp"
+                android:padding="3dp"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/frc_relative_description"
+            android:layout_below="@+id/frc_relative_title"
+            android:layout_toRightOf="@+id/frc_relative_image">
+            <TextView
+
+                android:id="@+id/frc_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLength="115"
+                android:textSize="12sp"
+                android:layout_marginLeft="14dp"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipisicingPulvinar cras magna ut fermentum placerat donec. Donec elit etiam suspendisse mattis elit lorem litora cum. Egestas dignissim aliquam velit sed phasellus convallis donec turpis ut ullamcorper luctus. Diam.
+
+Laoreet. Sociis lacus. Iaculis dictum. In penatibus morbi. Odio dolor nullam elementum viverra porttitor cras Eu tellus est. Facilisis facilisi sociosqu vulputate Egestas euismod odio in sollicitudin ad rutrum euismod risus id ornare habitasse nisl bibendum turpis cum volutpat blandit dignissim pellentesque a ultrices varius cras tempor sociosqu varius neque eros purus diam urna. Dictumst leo dictumst. Auctor vulputate.
+
+Potenti commodo diam nec lectus varius sem, nec dis nonummy dignissim pharetra mattis. Phasellus. Tortor venenatis pharetra vehicula, dui amet. Cum accumsan viverra mauris feugiat nostra nulla sodales morbi proin curabitur, felis sollicitudin per cursus tortor accumsan lacus gravida. Inceptos vitae. Laoreet, magnis natoque ac ligula class suspendisse natoque dictumst quisque, lacinia phasellus sem phasellus ac arcu blandit integer bibendum amet nascetur euismod, morbi malesuada libero et cursus. Placerat tellus.
+
+Diam. Vehicula elit ullamcorper morbi varius, vulputate, viverra felis. Arcu pulvinar pulvinar. Purus rutrum tempor. Est integer dolor sit scelerisque commodo integer. Aliquet purus egestas ornare risus mus viverra ultrices lorem sodales nisi sociosqu ridiculus tellus, leo montes platea montes sollicitudin justo."
+                />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/frc_relative_description"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:textAlignment="textEnd"
+                android:layout_gravity="end"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Read More"
+                android:id="@+id/frc_readmore_tv_dashboard"
+
+                />
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/frc_readmore_tv_arrow"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="3dp"
+
+
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+</android.support.v7.widget.CardView>

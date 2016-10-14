@@ -1,0 +1,191 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    card_view:cardCornerRadius="2dp"
+    card_view:cardUseCompatPadding="true"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cardview_background"
+
+        >
+
+
+        <RelativeLayout
+            android:id="@+id/view_more_left_layout"
+            android:layout_width="120dp"
+            android:layout_height="170dp"
+            android:layout_alignParentLeft="true"
+
+            >
+            <ImageView
+                android:id="@+id/view_more_adapter_iv"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/nopoto"
+                android:layout_centerInParent="true"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/view_more_dsh_rel_content"
+            android:layout_width="400dp"
+            android:layout_height="170dp"
+            android:layout_toRightOf="@+id/view_more_left_layout"
+            android:layout_marginLeft="5dp"
+            >
+
+            <TextView
+                android:id="@+id/view_more_adapter_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sailfish"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="2dp"
+                />
+
+            <TextView
+                android:id="@+id/view_more_adapter_title_malayalam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ഓലപുടവൻ"
+                android:layout_below="@+id/view_more_adapter_title"
+                android:layout_marginLeft="2dp"
+                android:textSize="12sp"
+                android:layout_marginTop="4dp"
+                />
+
+            <TextView
+                android:id="@+id/view_more_adapter_item_offer_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rs 135.00"
+                android:layout_below="@+id/view_more_adapter_title_malayalam"
+                android:background="@drawable/strikeout"
+                android:textSize="12sp"
+                android:textColor="@color/red"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="4dp"
+                android:visibility="gone"
+                />
+
+
+            <TextView
+                android:id="@+id/view_more_adapter_item_original_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rs 131.34"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/view_more_adapter_item_offer_price"
+                android:layout_below="@+id/view_more_adapter_title_malayalam"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/cardview_dark_background"
+                />
+            <!--<RelativeLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/view_more_recycler_view_list_itm_spnr_type_dropdwn"-->
+            <!--android:layout_below="@+id/category_iten_original_price"-->
+            <!--android:background="#A1E7EE">-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/tv_sp_value"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="SKINLESS 500 Kg"-->
+            <!--/>-->
+            <!--<TextView-->
+            <!--android:id="@+id/tv_sp_icon"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="-"-->
+            <!--android:layout_toRightOf="@+id/tv_sp_value"-->
+            <!--/>-->
+            <!--</RelativeLayout>-->
+
+            <Spinner
+                android:prompt="@string/select"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/view_more_recycler_view_list_itm_spnr_type_dropdwn"
+                android:layout_below="@+id/view_more_adapter_item_original_price"
+                android:drawSelectorOnTop="true"
+                android:background="@drawable/spinner_border"
+
+
+                >
+            </Spinner>
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/view_more_adapter_tv_no_decrease"
+                android:text="-"
+                android:padding="1dp"
+                android:gravity="center"
+                android:background="@color/addtocart"
+                android:textColor="@color/header_list_add_cart"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/view_more_recycler_view_list_itm_spnr_type_dropdwn"/>
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:id="@+id/view_more_adapter_tv_no_value"
+                android:text="1"
+                android:padding="4.7dp"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/textview_border"
+                android:layout_toRightOf="@+id/view_more_adapter_tv_no_decrease"
+                android:layout_below="@+id/view_more_recycler_view_list_itm_spnr_type_dropdwn"
+                >
+
+            </TextView>
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/view_more_adapter_tv_no_increase"
+                android:text="+"
+                android:background="@color/addtocart"
+                android:padding="1dp"
+                android:textColor="@color/header_list_add_cart"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/view_more_adapter_tv_no_value"
+                android:layout_below="@+id/view_more_recycler_view_list_itm_spnr_type_dropdwn"
+                >
+            </TextView>
+            <TextView
+                android:id="@+id/view_more_adapter_add"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="Add"
+                android:gravity="center"
+                android:padding="3dp"
+                android:textColor="@color/header_list_add_cart"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/view_more_recycler_view_list_itm_spnr_type_dropdwn"
+                android:layout_toRightOf="@+id/view_more_adapter_tv_no_increase"
+                android:background="@color/addtocart"
+                />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

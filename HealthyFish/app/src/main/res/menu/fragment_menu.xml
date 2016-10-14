@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    >
+    <!--<item-->
+        <!--android:id="@+id/action_search"-->
+        <!--android:title="@string/action_search"-->
+        <!--android:icon="@drawable/ic_search_action"-->
+        <!--app:showAsAction="always"/>-->
+    <item
+        android:id="@+id/action_shoping_cart"
+        android:icon="@drawable/ic_action_shoping_cart"
+        android:actionLayout="@layout/activity_cart_menu"
+        app:showAsAction="always"
+        android:title="" />
+
+
+</menu>
